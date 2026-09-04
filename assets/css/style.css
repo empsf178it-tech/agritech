@@ -4,6 +4,7 @@
   /* Colors */
   --deep-forest-green: #0a251b;
   --dark-charcoal: #1c1e1d;
+  --charcoal: #1c1e1d;
   --warm-off-white: #f7f6f2;
   --soft-sage: #a1b0a6;
   --light-gray: #e8e8e8;
@@ -117,6 +118,18 @@ img { max-width: 100%; height: auto; display: block; border-radius: 8px; }
   letter-spacing: 1px;
 }
 
+/* Badges on dark backgrounds */
+.bg-forest .badge,
+.bg-charcoal .badge,
+.tech-showcase .badge,
+.page-header[style*="deep-forest-green"] .badge,
+[style*="background-color: var(--deep-forest-green)"] .badge,
+[style*="background: var(--deep-forest-green)"] .badge {
+  background-color: rgba(34, 197, 94, 0.22);
+  color: #86efac;
+  border: 1px solid rgba(74, 222, 128, 0.35);
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -131,7 +144,23 @@ img { max-width: 100%; height: auto; display: block; border-radius: 8px; }
 }
 
 .navbar .container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-.navbar-brand { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--deep-forest-green); letter-spacing: 1px; }
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  letter-spacing: 1px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.navbar-brand img,
+.navbar-brand svg {
+  display: block;
+  flex-shrink: 0;
+}
 .nav-menu-wrapper { display: flex; align-items: center; gap: 2.5rem; }
 .navbar-nav { display: flex; gap: 2.5rem; }
 .navbar-actions { display: flex; align-items: center; }
@@ -935,6 +964,43 @@ section { padding: var(--section-padding); }
 
 @media (max-width: 991px) {
   .mockup-body { grid-template-columns: 1fr; }
+}
+
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-box {
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--light-gray);
+}
+.stat-label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--soft-sage);
+  margin-bottom: 0.25rem;
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  font-family: var(--font-heading);
+}
+
+.map-status-badge {
+  position: relative;
+  z-index: 2;
+  border: 2px solid var(--fresh-green);
+  padding: 0.75rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--deep-forest-green);
 }
 
 .dashboard-card {
@@ -2502,6 +2568,54 @@ textarea.form-control { resize: vertical; min-height: 120px; }
     margin-top: -140px;
     margin-left: -140px;
   }
+
+  /* Sandbox section mobile padding */
+  .sandbox-section {
+    padding: 4rem 0 !important;
+  }
+
+  /* Switch rows: prevent button overflow at mid-mobile */
+  .switch-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .sandbox-toggle-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Sandbox meters: 3 cols cramped, use 1 col on mobile */
+  .sandbox-meters {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .meter-box {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .m-label {
+    font-size: 0.7rem;
+  }
+
+  .m-value {
+    font-size: 1.2rem;
+  }
+
+  /* Mockup & Dashboard responsive fixes */
+  .mockup-body {
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+  .dashboard-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .map-status-badge {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2512,6 +2626,56 @@ textarea.form-control { resize: vertical; min-height: 120px; }
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
 
+  /* Section & CTA spacing fixes for mobile */
+  .sandbox-section {
+    padding: 3.5rem 0 !important;
+  }
+  .sandbox-section .section-header {
+    margin-bottom: 1.75rem;
+  }
+
+  /* Mockup & Dashboard responsive fixes for 360px */
+  .mockup-window {
+    margin-top: -1.5rem;
+    border-radius: 10px;
+  }
+  .mockup-header {
+    padding: 0.75rem;
+  }
+  .mockup-body {
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+  .dashboard-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+  .dashboard-card h4 {
+    font-size: 0.92rem;
+  }
+  .dashboard-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .stat-box {
+    padding: 0.75rem 0.5rem;
+    border-radius: 8px;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+  }
+  .stat-value {
+    font-size: 1.2rem;
+  }
+  .map-status-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    max-width: 85%;
+    text-align: center;
+  }
+
   .crop-btn-grid {
     grid-template-columns: 1fr;
   }
@@ -2519,6 +2683,39 @@ textarea.form-control { resize: vertical; min-height: 120px; }
   .roi-card, .diagnostic-card, .sandbox-card {
     padding: 1.25rem;
     border-radius: 14px;
+    gap: 1.25rem;
+  }
+
+  /* Sandbox section: switch rows stack on 360px */
+  .switch-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .sandbox-toggle-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.65rem 1rem;
+  }
+
+  /* Sandbox meters: 1 column on 360px */
+  .sandbox-meters {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .m-value {
+    font-size: 1.3rem;
+  }
+
+  .sandbox-live-display {
+    padding: 1rem;
+  }
+
+  .sandbox-log {
+    font-size: 0.75rem;
+    padding: 0.75rem;
   }
 
   .roi-results {

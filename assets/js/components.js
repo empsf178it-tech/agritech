@@ -7,7 +7,7 @@ const renderNavbar = () => {
     const navbarHTML = `
     <nav class="navbar">
         <div class="container">
-            <a href="${root}index.html" class="navbar-brand" style="display: flex; align-items: center; gap: 8px;">
+            <a href="${root}index.html" class="navbar-brand">
                 <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="16" cy="16" r="15" fill="rgba(34, 197, 94, 0.15)" stroke="#22c55e" stroke-width="1.5"/>
                     <path d="M16 7C16 7 23 9.5 23 17C23 22 17.5 24.5 16 24.5C14.5 24.5 9 22 9 17C9 9.5 16 7 16 7Z" fill="url(#nav-logo-grad)"/>
