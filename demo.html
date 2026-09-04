@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Demo | AGROVIA</title>
+    <meta name="description" content="See what your farm data can do. Request a personalized walkthrough of the AGROVIA platform.">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-warm-off-white">
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <section style="padding: 10rem 0 6rem;">
+        <div class="container">
+            <div class="contact-layout align-center">
+                
+                <!-- Form Side -->
+                <div class="reveal delay-100">
+                    <span class="badge">Platform Demo</span>
+                    <h1 style="font-size: 3rem; margin-bottom: 1rem;">See what your farm data can do.</h1>
+                    <p style="font-size: 1.15rem; margin-bottom: 3rem;">Request a personalized walkthrough of the AGROVIA platform. Learn how our technology fits your specific farming needs.</p>
+                    
+                    <div class="form-card" style="box-shadow: none; padding: 0; background: transparent; border: none;">
+                        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Demo Requested! (Mock)');">
+                            
+                            <div class="grid-2" style="gap: 1.5rem; margin-bottom: 0;">
+                                <div class="form-group">
+                                    <label for="demo-name">Full Name *</label>
+                                    <input type="text" id="demo-name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="demo-email">Work Email *</label>
+                                    <input type="email" id="demo-email" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="grid-2" style="gap: 1.5rem; margin-bottom: 0;">
+                                <div class="form-group">
+                                    <label for="demo-phone">Phone Number *</label>
+                                    <input type="tel" id="demo-phone" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="demo-org">Farm / Organization *</label>
+                                    <input type="text" id="demo-org" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="grid-2" style="gap: 1.5rem; margin-bottom: 0;">
+                                <div class="form-group">
+                                    <label for="demo-size">Farm Size (Acres)</label>
+                                    <select id="demo-size" class="form-control">
+                                        <option value="">Select Size</option>
+                                        <option value="1-50">1 - 50</option>
+                                        <option value="51-500">51 - 500</option>
+                                        <option value="501-2000">501 - 2,000</option>
+                                        <option value="2000+">2,000+</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="demo-interest">Primary Interest</label>
+                                    <select id="demo-interest" class="form-control">
+                                        <option value="">Select Interest</option>
+                                        <option value="irrigation">Smart Irrigation</option>
+                                        <option value="crop">Crop Intelligence</option>
+                                        <option value="soil">Soil Monitoring</option>
+                                        <option value="weather">Weather Intelligence</option>
+                                        <option value="analytics">Farm Analytics</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="demo-msg">What are your main goals? (Optional)</label>
+                                <textarea id="demo-msg" class="form-control" style="min-height: 80px;"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Request Demo <i data-lucide="arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Visual Side -->
+                <div class="reveal delay-200">
+                    <div class="mockup-window" style="margin: 0; box-shadow: var(--shadow-lg);">
+                        <div class="mockup-header">
+                            <div class="mockup-dot red"></div>
+                            <div class="mockup-dot yellow"></div>
+                            <div class="mockup-dot green"></div>
+                        </div>
+                        <img src="assets/img/28.png" alt="Dashboard Preview" style="width: 100%; height: 500px; object-fit: cover;">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(transparent, rgba(10,37,27,0.9)); color: white;">
+                            <div class="dashboard-widget" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                                <div class="widget-row" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <span class="w-label" style="color: rgba(255,255,255,0.8);"><i data-lucide="leaf"></i> Crop Health</span>
+                                    <span class="w-value" style="color: var(--fresh-green);">92%</span>
+                                </div>
+                                <div class="widget-row" style="border-bottom: none; padding-bottom: 0;">
+                                    <span class="w-label" style="color: rgba(255,255,255,0.8);"><i data-lucide="droplet"></i> Soil Moisture</span>
+                                    <span class="w-value" style="color: white;">68%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 2rem; margin-top: 3rem; justify-content: center;">
+                        <div class="text-center">
+                            <i data-lucide="video" style="color: var(--fresh-green); width: 32px; height: 32px; margin-bottom: 0.5rem;"></i>
+                            <h4 style="font-size: 0.95rem;">Live Walkthrough</h4>
+                        </div>
+                        <div class="text-center">
+                            <i data-lucide="users" style="color: var(--fresh-green); width: 32px; height: 32px; margin-bottom: 0.5rem;"></i>
+                            <h4 style="font-size: 0.95rem;">Q&A with Experts</h4>
+                        </div>
+                        <div class="text-center">
+                            <i data-lucide="settings" style="color: var(--fresh-green); width: 32px; height: 32px; margin-bottom: 0.5rem;"></i>
+                            <h4 style="font-size: 0.95rem;">Custom Setup</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: What Happens During Your Demo? -->
+    <section class="demo-steps-section reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Walkthrough Experience</span>
+                <h2>What Happens During Your Demo?</h2>
+                <p class="subtitle">A personalized 30-minute session tailored specifically to your farm's acreage and crop goals.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card reveal">
+                    <div class="step-number">1</div>
+                    <h3>1-on-1 Crop Assessment</h3>
+                    <p>Our agricultural tech expert analyzes your farm location, crop types, irrigation methods, and primary yield challenges.</p>
+                </div>
+
+                <div class="step-card reveal delay-100">
+                    <div class="step-number">2</div>
+                    <h3>Live Platform Walkthrough</h3>
+                    <p>Experience real-time telemetry, soil moisture heatmaps, weather forecasting, and automated irrigation triggers in action.</p>
+                </div>
+
+                <div class="step-card reveal delay-200">
+                    <div class="step-number">3</div>
+                    <h3>Custom ROI & Pilot Plan</h3>
+                    <p>Receive a personalized cost-savings report, hardware configuration plan, and 30-day risk-free pilot setup for your fields.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Frequently Asked Questions -->
+    <section class="demo-faq-section reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Got Questions?</span>
+                <h2>Frequently Asked Questions</h2>
+                <p class="subtitle">Everything you need to know about requesting an AGROVIA demo.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>How long does the live demo session take?</span>
+                        <span class="faq-icon">✚</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our standard demo takes 25 to 30 minutes. We leave plenty of time for Q&A and can customize the session length based on your schedule and interest areas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need to install any hardware to see a demo?</span>
+                        <span class="faq-icon">✚</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No hardware required! We construct a virtual digital twin using satellite imagery and historical microclimate data for your specific region so you can see realistic data immediately.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I invite my farm manager or agronomist?</span>
+                        <span class="faq-icon">✚</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We encourage team participation including farm operators, agronomists, and irrigation managers so everyone can see how the platform fits their daily routines.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is there any cost or commitment for the demo?</span>
+                        <span class="faq-icon">✚</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The demo is 100% free with zero commitment. Our goal is to demonstrate how AGROVIA can increase your yield and lower input costs before you make any decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

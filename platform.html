@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform | AGROVIA</title>
+    <meta name="description" content="Your farm. One intelligent view. Explore the AGROVIA software platform.">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-warm-off-white">
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="page-header reveal" style="padding-bottom: 6rem;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem;">Your farm. One intelligent view.</h1>
+            <p>Access all your field data, insights, and controls from a single, intuitive dashboard.</p>
+        </div>
+    </section>
+
+    <!-- Platform Mockup -->
+    <section style="padding-top: 0; padding-bottom: 6rem;">
+        <div class="container">
+            <div class="mockup-window reveal delay-100">
+                <div class="mockup-header">
+                    <div class="mockup-dot red"></div>
+                    <div class="mockup-dot yellow"></div>
+                    <div class="mockup-dot green"></div>
+                </div>
+                <div class="mockup-body">
+                    
+                    <!-- Left Column (Main Dash) -->
+                    <div class="dashboard-main">
+                        
+                        <!-- Top Stats -->
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                            <div class="stat-box" style="padding: 1rem; background: var(--white);">
+                                <span class="stat-label">Crop Health</span>
+                                <div class="stat-value" style="font-size: 1.5rem;">92%</div>
+                            </div>
+                            <div class="stat-box" style="padding: 1rem; background: var(--white);">
+                                <span class="stat-label">Soil Moisture</span>
+                                <div class="stat-value" style="font-size: 1.5rem;">68%</div>
+                            </div>
+                            <div class="stat-box" style="padding: 1rem; background: var(--white);">
+                                <span class="stat-label">Temperature</span>
+                                <div class="stat-value" style="font-size: 1.5rem;">28°C</div>
+                            </div>
+                            <div class="stat-box" style="padding: 1rem; background: var(--white);">
+                                <span class="stat-label">Humidity</span>
+                                <div class="stat-value" style="font-size: 1.5rem;">74%</div>
+                            </div>
+                        </div>
+
+                        <!-- Charts Row -->
+                        <div class="grid-2" style="gap: 1.5rem; margin-bottom: 1.5rem;">
+                            
+                            <!-- Line Chart (Crop Health) -->
+                            <div class="dashboard-card">
+                                <h4><i data-lucide="activity"></i> Crop Health Index (30 Days)</h4>
+                                <div class="chart-placeholder">
+                                    <svg class="svg-chart" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                        <path d="M 0,100 C 50,90 100,120 150,70 C 200,20 250,80 300,50 C 350,20 400,30 400,30"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Bar Chart (Soil Moisture) -->
+                            <div class="dashboard-card">
+                                <h4><i data-lucide="droplet"></i> Soil Moisture (Zones)</h4>
+                                <div class="chart-placeholder" style="align-items: flex-end; padding-top: 2rem;">
+                                    <div class="bar" style="height: 40%;"></div>
+                                    <div class="bar" style="height: 60%;"></div>
+                                    <div class="bar" style="height: 80%;"></div>
+                                    <div class="bar" style="height: 50%;"></div>
+                                    <div class="bar" style="height: 70%;"></div>
+                                    <div class="bar" style="height: 90%;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- Field Map Placeholder -->
+                        <div class="dashboard-card" style="margin-bottom: 0;">
+                            <h4><i data-lucide="map"></i> Field Map Overview</h4>
+                            <div style="height: 250px; background: #e5e7eb; border-radius: 8px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/img/17.png" style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity: 0.5;" alt="Map">
+                                <div style="position: relative; z-index: 2; border: 2px solid var(--fresh-green); padding: 1rem 3rem; background: rgba(255,255,255,0.9); border-radius: 8px; font-weight: 600;">Sector 4 - Active</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Right Column (Sidebar) -->
+                    <div class="dashboard-sidebar">
+                        
+                        <div class="dashboard-card">
+                            <h4><i data-lucide="waves"></i> Irrigation</h4>
+                            <div style="background: rgba(34, 197, 94, 0.1); padding: 1rem; border-radius: 8px; border: 1px solid rgba(34, 197, 94, 0.3); text-align: center; margin-bottom: 1.5rem;">
+                                <span style="display: block; font-size: 0.85rem; color: var(--deep-forest-green); font-weight: 600;">System Status</span>
+                                <span style="display: block; font-size: 1.5rem; color: var(--fresh-green); font-weight: 700;">ACTIVE</span>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card" style="margin-bottom: 0;">
+                            <h4><i data-lucide="list"></i> Recent Activity</h4>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <div class="activity-icon"><i data-lucide="droplet" style="width: 16px;"></i></div>
+                                    <div class="activity-details">
+                                        <h5>Irrigation Started</h5>
+                                        <p>Zone B - 10 mins ago</p>
+                                    </div>
+                                </li>
+                                <li class="activity-item">
+                                    <div class="activity-icon"><i data-lucide="alert-circle" style="width: 16px;"></i></div>
+                                    <div class="activity-details">
+                                        <h5>Temp Alert</h5>
+                                        <p>High temp detected in Zone A</p>
+                                    </div>
+                                </li>
+                                <li class="activity-item">
+                                    <div class="activity-icon"><i data-lucide="check" style="width: 16px;"></i></div>
+                                    <div class="activity-details">
+                                        <h5>System Check</h5>
+                                        <p>All sensors online</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Features -->
+    <section class="bg-white">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>Platform Features</h2>
+                <p class="subtitle">Everything you need to manage your farm's data.</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="feature-card reveal">
+                    <div class="icon-wrapper"><i data-lucide="monitor"></i></div>
+                    <h3>Real-Time Monitoring</h3>
+                    <p>Watch your field metrics update second by second.</p>
+                </div>
+                <div class="feature-card reveal delay-100">
+                    <div class="icon-wrapper"><i data-lucide="bell-ring"></i></div>
+                    <h3>Smart Alerts</h3>
+                    <p>Get notified instantly via SMS or email when thresholds are breached.</p>
+                </div>
+                <div class="feature-card reveal delay-200">
+                    <div class="icon-wrapper"><i data-lucide="pie-chart"></i></div>
+                    <h3>Farm Analytics</h3>
+                    <p>Dive deep into long-term trends and compare season-over-season performance.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="icon-wrapper"><i data-lucide="map"></i></div>
+                    <h3>Field Management</h3>
+                    <p>Organize your farm into zones and manage them individually.</p>
+                </div>
+                <div class="feature-card reveal delay-100">
+                    <div class="icon-wrapper"><i data-lucide="history"></i></div>
+                    <h3>Historical Data</h3>
+                    <p>Keep infinite records of your farm's history for compliance and analysis.</p>
+                </div>
+                <div class="feature-card reveal delay-200">
+                    <div class="icon-wrapper"><i data-lucide="smartphone"></i></div>
+                    <h3>Mobile Access</h3>
+                    <p>Take your farm dashboard anywhere with our responsive mobile platform.</p>
+                </div>
+            </div>
+            
+            <div class="text-center reveal" style="margin-top: 4rem;">
+                <a href="demo.html" class="btn btn-primary">Request a Platform Demo <i data-lucide="arrow-right"></i></a>
+            </div>
+    <!-- Live Interactive Farm Dashboard Sandbox Mode -->
+    <section class="sandbox-section bg-charcoal text-center reveal" style="padding: 6rem 0; color: white;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge" style="background: rgba(34, 197, 94, 0.2); color: #86efac;">Interactive Sandbox</span>
+                <h2 style="color: white;">Try The Live Control Sandbox</h2>
+                <p class="subtitle" style="color: rgba(255,255,255,0.8);">Toggle field actuators, initiate drone radar scans, and watch telemetry metrics react live.</p>
+            </div>
+
+            <div class="sandbox-card">
+                <div class="sandbox-switches">
+                    <h3 style="color: white; font-size: 1.15rem; margin-bottom: 1.25rem;">Control Switches</h3>
+                    
+                    <div class="switch-row">
+                        <div class="switch-info">
+                            <strong>💧 Drip Irrigation Valve (Zone 4)</strong>
+                            <span>Automated moisture compensation</span>
+                        </div>
+                        <button id="toggle-valve" class="sandbox-toggle-btn">TURN ON</button>
+                    </div>
+
+                    <div class="switch-row">
+                        <div class="switch-info">
+                            <strong>🚁 Drone Aerial Scan</strong>
+                            <span>Multispectral radar sweep</span>
+                        </div>
+                        <button id="toggle-drone" class="sandbox-toggle-btn">START SCAN</button>
+                    </div>
+
+                    <div class="switch-row">
+                        <div class="switch-info">
+                            <strong>🌱 Nitrogen Dosing Pump</strong>
+                            <span>Precision chemical injection</span>
+                        </div>
+                        <button id="toggle-nitrogen" class="sandbox-toggle-btn">INJECT NPK</button>
+                    </div>
+                </div>
+
+                <div class="sandbox-live-display">
+                    <div class="display-header">
+                        <span class="toast-pulse-dot"></span>
+                        <strong>LIVE TELEMETRY OUTPUT</strong>
+                    </div>
+
+                    <div class="sandbox-meters">
+                        <div class="meter-box">
+                            <span class="m-label">Soil Moisture</span>
+                            <h4 id="sb-moisture" class="m-value">28.4%</h4>
+                            <span id="sb-moisture-status" class="m-status" style="color: #fb923c;">Low (Needs Water)</span>
+                        </div>
+
+                        <div class="meter-box">
+                            <span class="m-label">NDVI Health Index</span>
+                            <h4 id="sb-ndvi" class="m-value">0.76</h4>
+                            <span id="sb-ndvi-status" class="m-status" style="color: #86efac;">Standard Canopy</span>
+                        </div>
+
+                        <div class="meter-box">
+                            <span class="m-label">Soil Nitrogen</span>
+                            <h4 id="sb-nitrogen" class="m-value">34 ppm</h4>
+                            <span id="sb-nitrogen-status" class="m-status" style="color: #fb923c;">Deficient</span>
+                        </div>
+                    </div>
+
+                    <div class="sandbox-log" id="sb-log">
+                        [SYSTEM]: Ready. Click control switches above to trigger real-time actuators.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
